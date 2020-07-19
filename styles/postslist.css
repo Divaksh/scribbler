@@ -73,7 +73,7 @@
     -webkit-box-orient: vertical;  
     margin-bottom: 0 !important;
     overflow: hidden;
-    text-overflow: clip;
+    text-overflow: ellipsis;
     font-size: 14px;
 }
 

@@ -4,6 +4,7 @@ function removePost(post) {
         delelePost.parentNode.removeChild(delelePost);
 };
 
+//Sets dynamic id value to the delete modal
 $(document).ready(function () {
 	$('#deletePostModal').on('show.bs.modal', function (event) { // id of the modal with event
 	  var button = $(event.relatedTarget); // Button that triggered the modal
@@ -16,3 +17,22 @@ $(document).ready(function () {
 	  modal.find('button.btn-danger').val(postId);
 	})
 });
+
+//Method to open the perticular page based on id
+function openPost(post){
+	var parentDiv = post.parentNode.parentNode;
+	const postId = parentDiv.getAttribute("id") 
+	setPostDetails(postId);
+	window.location="../html/post.html?postId=" + postId;
+};
+
+//Method to set post details to the session storage so new page can get the same from it
+function setPostDetails(postId){
+	const postAuthor = document.getElementById(postId).querySelector(".author-name p").innerHTML;
+	const postTitle = document.getElementById(postId).querySelector(".post-preview-title p").innerHTML;
+	const postContent = document.getElementById(postId).querySelector(".post-preview-content").innerHTML;
+	sessionStorage.setItem('postid', postId);
+	sessionStorage.setItem('author', postAuthor);
+	sessionStorage.setItem('title', postTitle);
+	sessionStorage.setItem('content', postContent);
+};
