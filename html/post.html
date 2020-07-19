@@ -26,7 +26,7 @@
 
 </head>
 
-<body>
+<body onload="updatePostContent()">
     <div class="container-fluid min-vh-100">
         <!-- code for header here -->
         <header>
@@ -42,9 +42,13 @@
                 </div>
             </div>                
         </header>
+
+        <div id="post-title"></div>
+        <div id="post-author"></div>
+        <div id="post-content"></div>
+
     </div>
 
-    
 <!-- SignUp Modal -->
 <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">

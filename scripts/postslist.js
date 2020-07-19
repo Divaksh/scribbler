@@ -31,8 +31,8 @@ function setPostDetails(postId){
 	const postAuthor = document.getElementById(postId).querySelector(".author-name p").innerHTML;
 	const postTitle = document.getElementById(postId).querySelector(".post-preview-title p").innerHTML;
 	const postContent = document.getElementById(postId).querySelector(".post-preview-content").innerHTML;
-	sessionStorage.setItem('postid', postId);
-	sessionStorage.setItem('author', postAuthor);
-	sessionStorage.setItem('title', postTitle);
-	sessionStorage.setItem('content', postContent);
+	sessionStorage.setItem('postId', postId);
+	sessionStorage.setItem('author_' + postId, postAuthor);
+	sessionStorage.setItem('title_ ' + postId, postTitle);
+	sessionStorage.setItem('content_' + postId, postContent);
 };
