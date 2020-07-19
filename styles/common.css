@@ -1,0 +1,17 @@
+header {
+    padding: 10px;
+}
+
+.header-branding{
+    font-family: 'Montez', cursive; 
+    color: blue;
+}
+
+.subheader-branding{
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: large;
+}
+
+#header-buttons{
+    text-decoration: none;
+}
