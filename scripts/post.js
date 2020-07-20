@@ -27,9 +27,9 @@ function editPost(){
 
     // Load the post title and post content in edit mode with border
     document.getElementById("post-title").contentEditable = true; 
-    document.getElementById("post-title").style.border = "1px solid rgb(255, 136, 160)";
+    document.getElementById("post-title").style.border = "1px solid pink";
     document.getElementById("post-content").contentEditable = true;
-    document.getElementById("post-content").style.border = "1px solid rgb(255, 136, 160)";
+    document.getElementById("post-content").style.border = "1px solid pink";
 }
 
 // This method saves the post and and add label from edit mode
