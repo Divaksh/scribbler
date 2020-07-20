@@ -33,6 +33,6 @@ function setPostDetails(postId){
 	const postContent = document.getElementById(postId).querySelector(".post-preview-content").innerHTML;
 	sessionStorage.setItem('postId', postId);
 	sessionStorage.setItem('author_' + postId, postAuthor);
-	sessionStorage.setItem('title_ ' + postId, postTitle);
+	sessionStorage.setItem('title_' + postId, postTitle);
 	sessionStorage.setItem('content_' + postId, postContent);
 };

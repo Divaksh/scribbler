@@ -1,6 +1,11 @@
 #post-container {
     padding: 30px;
 }
+
+.post-control{
+    padding: 15px 0;
+}
+
 #post-title {
     text-align: center;
     font-size: x-large;
@@ -13,8 +18,15 @@
     font-size: large;
 }
 
-#editButton {
+#editPostButton {
     float: right;
     box-shadow: 0 4px 2px -2px rgb(255, 136, 160);
     -webkit-box-shadow: 0 4px 2px -2px rgb(255, 136, 160);
 }
+
+#savePostButton {
+    float: right;
+    box-shadow: 0 4px 2px -2px rgb(255, 136, 160);
+    -webkit-box-shadow: 0 4px 2px -2px rgb(255, 136, 160);
+}
+
