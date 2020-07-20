@@ -77,6 +77,6 @@ function addComments(id){
     document.getElementById("allComments").style.display = 'flex';
     var comment = id.value +'<br>';
     var a = document.getElementById('postComment');
-    document.getElementById('allComments').innerHTML += '<div class="comment"><p>' + comment + '</p></div>';          
+    document.getElementById('allComments').innerHTML = '<div class="comment"><p>' + comment + '</p></div>' + document.getElementById('allComments').innerHTML;          
     a.value=a.defaultValue;
 }
