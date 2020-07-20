@@ -38,13 +38,16 @@ function savePost(){
     document.getElementById("savePostButton").style.display = 'none';
     // Show the edit button in normal mode
     document.getElementById("editPostButton").style.display = 'block';
+    // Disable the edit button
+    document.getElementById('editPostButton').disabled = true
 
+    if(!isEdited){
     // Remove the edit mode from post title and post content to show the saved post
     document.getElementById("post-title").contentEditable = false;
     document.getElementById("post-title").style.border = "0";
     document.getElementById("post-content").contentEditable = false;
     // Add UPDATED label to the post updated post
-    if(!isEdited){
+
         var postTitle = document.getElementById('post-title').innerHTML
         var postContent = document.getElementById('post-content').innerHTML;
         var updatedLabel = "UPDATED:";
