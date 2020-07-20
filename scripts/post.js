@@ -43,9 +43,11 @@ function savePost(){
     document.getElementById("post-content").contentEditable = false;
     // Add UPDATED label to the post updated post
     if(!isEdited){
+        var postTitle = document.getElementById('post-title').innerHTML
         var postContent = document.getElementById('post-content').innerHTML;
-        var updatedLabel = "<div>UPDATED:</div>";
-        document.getElementById('post-content').innerHTML = updatedLabel + postContent;
+        var updatedLabel = "UPDATED:";
+        document.getElementById('post-title').innerHTML = updatedLabel + " " + postTitle;
+        document.getElementById('post-content').innerHTML = updatedLabel + "<br/>" + postContent;
         isEdited = true;
     }
     document.getElementById("post-content").style.border = "0";
