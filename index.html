@@ -29,22 +29,22 @@
     <div class="container-fluid min-vh-100">
         <header>
             <div class="row">
-                <div class="col-10">
+                <div class="col">
                     <h1 class="header-branding">ScriBBler</h1>
                     <h2 class="subheader-branding">Explore, Imagine, Create</h2>    
                 </div>
 
-                <div id="header-buttons" class="col-2">
-                    <button id="btnSignUp" class="btn-primary" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
-                    <button id="btnSignIn" class="btn-primary" data-toggle="modal" data-target="#signInModal">Sign In</button>
+                <div id="header-buttons" class="col">
+                    <button id="btnSignIn" class="btn-primary float-right btn-flat" data-toggle="modal" data-target="#signInModal">Sign In</button>
+                    <button id="btnSignUp" class="btn-primary float-right btn-flat" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
                 </div>
             </div>                
         </header>
         <div class="home-container">
             <div class="row h-100 align-items-center justify-content-center">
-                <div id="home-buttons" class="col-md-2 mx-auto">
-                    <button class="btn-warning" onclick="window.location.href='/html/postslist.html';">All Posts</button>
-                    <button class="btn-warning" id="btnCreatePost" data-toggle="modal" data-target="#createPostModal"> Create Post</button>
+                <div id="home-buttons" class="col text-center">
+                    <button class="btn-warning btn-flat" id="viewAllPosts" onclick="window.location.href='/html/postslist.html';">All Posts</button>
+                    <button class="btn-warning btn-flat" id="btnCreatePost" data-toggle="modal" data-target="#createPostModal"> Create Post</button>
                 </div>
             </div>
         </div>    

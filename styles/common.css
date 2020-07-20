@@ -16,6 +16,18 @@ header {
     text-decoration: none;
 }
 
+#btnSignUp, #btnSignIn {
+    margin: 10px;
+    padding: 10px 25px;
+    border: 2px solid gray;
+    background-color: blue;
+}
+
+
+#btnSignUp:hover, #btnSignIn:hover {
+    background-color: darkblue;
+}
+
 .btn-full{
     width: 100%;
     border-radius: 0px !important;

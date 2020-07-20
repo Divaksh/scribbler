@@ -9,3 +9,8 @@
 .home-container{
     height: 70vh;
 }
+
+#viewAllPosts, #btnCreatePost {
+    margin: 10px;
+    padding: 10px 25px;
+}
