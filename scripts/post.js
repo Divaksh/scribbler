@@ -73,10 +73,17 @@ function postLiked(){
 }
 
 // Method to add post comments
-function addComments(id){
-    document.getElementById("allComments").style.display = 'flex';
-    var comment = id.value +'<br>';
-    var a = document.getElementById('postComment');
-    document.getElementById('allComments').innerHTML = '<div class="comment"><p>' + comment + '</p></div>' + document.getElementById('allComments').innerHTML;          
-    a.value=a.defaultValue;
+function addComments(postComment){
+    if (postComment.value !== '') {
+        document.getElementById("postComment").style.border = '1px solid #ced4da';
+        document.getElementById("allComments").style.display = 'flex';
+        var comment = postComment.value +'<br>';
+        var a = document.getElementById('postComment');
+        document.getElementById('allComments').innerHTML = '<div class="comment"><p>' + comment + '</p></div>' + document.getElementById('allComments').innerHTML;          
+        a.value=a.defaultValue;
+    }
+    else {
+        // If comment box is empty show red border to highlight it
+        document.getElementById("postComment").style.border = '1px solid red';
+    }
 }
