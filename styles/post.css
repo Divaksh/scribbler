@@ -2,7 +2,12 @@
     padding: 30px;
 }
 
-.post-control{
+#post-container button {
+    box-shadow: 0 4px 2px -2px rgb(255, 136, 160);
+    -webkit-box-shadow: 0 4px 2px -2px rgb(255, 136, 160);
+}
+
+.post-control {
     padding: 15px 0;
 }
 
@@ -20,13 +25,18 @@
 
 #editPostButton {
     float: right;
-    box-shadow: 0 4px 2px -2px rgb(255, 136, 160);
-    -webkit-box-shadow: 0 4px 2px -2px rgb(255, 136, 160);
 }
 
 #savePostButton {
     float: right;
-    box-shadow: 0 4px 2px -2px rgb(255, 136, 160);
-    -webkit-box-shadow: 0 4px 2px -2px rgb(255, 136, 160);
 }
 
+.likePostSection {
+    padding: 15px 0;
+}
+
+#likeCount {
+    padding-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #444444;
+}

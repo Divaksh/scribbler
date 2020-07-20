@@ -1,4 +1,6 @@
+// Variable declarations
 var isEdited = false;
+var numberOfClicks=0;
 
 //Method to update post details from the session storage so new page can show it
 function updatePostContent(){
@@ -51,4 +53,18 @@ function savePost(){
         isEdited = true;
     }
     document.getElementById("post-content").style.border = "0";
+}
+
+// Method to maintain post likes
+function postLiked(){
+    document.getElementById("likePostButton").innerHTML = '<i class="fa fa-thumbs-up"></i>   Liked';
+    numberOfClicks += 1;
+    if(numberOfClicks!=0){
+        if (numberOfClicks==1){
+            document.getElementById('likeCount').innerHTML = numberOfClicks + " person likes this!";
+        }
+        else {
+            document.getElementById('likeCount').innerHTML = numberOfClicks + " people like this!";
+        }
+    }
 }
