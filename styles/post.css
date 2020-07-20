@@ -40,3 +40,33 @@
     font-family: 'Courier New', Courier, monospace;
     color: #444444;
 }
+
+.postCommentSection {
+    max-width: 70%;
+}
+
+.comments-title{
+    font-weight: bold;
+    font-size: large;
+    padding: 20px 0 10px 0;
+}
+
+#allComments {
+    display: none;
+    background-color: #e2e4e6;
+    flex-direction: column;
+    padding: 20px 5px;
+}
+
+#allComments p{
+    margin: auto;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.comment {
+    background-color: #ffffff;
+    margin: 5px 5px;
+    padding: 10px 5px;
+
+}

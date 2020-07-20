@@ -56,7 +56,15 @@
             <div class="likePostSection">    
                 <button id="likePostButton" class="btn btn-danger btn-flat" onclick="postLiked()"><i class="fa fa-thumbs-up"></i>   Like</button> 
                 <div id="likeCount">Be the first one to like this!</div>
-              </div>
+            </div>
+            <div class="postCommentSection">
+                <div class="form-group">
+                    <textarea id="postComment" class="form-control" rows="4" cols="50%" placeholder="Leave a comment..." name="comment" value=""></textarea>
+                </div>
+                <button id="addList" class="btn btn-danger btn-flat" onclick="addComments(postComment)">Comment</button>
+                <div class="comments-title">All Comments</div>
+                <div id="allComments"></div>
+            </div>
         </div>
     </div>
 

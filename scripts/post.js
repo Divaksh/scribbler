@@ -68,3 +68,12 @@ function postLiked(){
         }
     }
 }
+
+// Method to add post comments
+function addComments(id){
+    document.getElementById("allComments").style.display = 'flex';
+    var comment = id.value +'<br>';
+    var a = document.getElementById('postComment');
+    document.getElementById('allComments').innerHTML += '<div class="comment"><p>' + comment + '</p></div>';          
+    a.value=a.defaultValue;
+}
